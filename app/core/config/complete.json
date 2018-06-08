@@ -1,0 +1,14 @@
+{
+	"cols": {
+		"f_cols": ["ShipmentCount", "MonthNumber", "DestLocCode", "StandardWeightInKG"],
+		"conditions": {			
+        "StandardWeightInKG": ["lt", 350],
+        "ShipmentCount": ["lt", 20]
+		},
+		"agg_cols": [ "MonthNumber", "DestLocCode", "StandardWeightInKG"]
+	},
+	"encoder_data": {
+		"label_enc_col": "DestLocCode",
+		"one_hot": ""
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"cols": {
+		"f_cols": ["Diff_Time", "Stop_Actual_Sequence_Num", "Postal_Code", "Street_Num", "District_Num"],
+		"conditions": {
+			"Diff_Time": ["gt", 0.01]			
+		},
+		"agg_cols": []
+
+	},
+	"encoder_data": {
+		
+	}
+}

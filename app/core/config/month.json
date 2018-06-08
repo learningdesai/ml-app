@@ -1,0 +1,1 @@
+{"cols": {"f_cols": ["ShipmentCount", "MonthNumber"], "conditions": {"ShipmentCount": ["lt", 20]}, "agg_cols": []}, "encoder_data": {}}

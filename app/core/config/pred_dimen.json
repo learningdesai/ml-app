@@ -1,0 +1,18 @@
+{
+	"cols": {
+		"f_cols": ["Dimension", "ShipmentCount", "DestLocCode", "MonthNumber",  "StandardWeightInKG"],
+		"conditions": {			
+        "StandardWeightInKG": ["lt", 350],
+        "ShipmentCount": ["lt", 20],
+        "Dimension": ["gt", 100000],
+        "CustomStdWidth": ["lt", 50],
+        "CustomStdHeight": ["lt", 50],
+        "CustomStdLength": ["lt", 50]
+		},
+		"agg_cols": [ "MonthNumber", "DestLocCode", "StandardWeightInKG"]
+	},
+	"encoder_data": {
+		"label_enc_col": "DestLocCode",
+		"one_hot": ""
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"cols": {
+		"f_cols": ["ShipmentCount", "StandardWeightInKG"],
+		"conditions": {
+			"StandardWeightInKG": ["lt", 350],
+			"ShipmentCount": ["lt", 20]
+		},
+		"agg_cols": []
+
+	},
+	"encoder_data": {
+		
+	}
+}

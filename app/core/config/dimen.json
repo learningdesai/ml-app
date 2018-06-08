@@ -1,0 +1,18 @@
+{
+	"cols": {
+		"f_cols": ["ShipmentCount", "MonthNumber", "DestLocCode", "StandardWeightInKG", "CustomStdWidth", "CustomStdHeight", "CustomStdLength"],
+		"conditions": {			
+        "StandardWeightInKG": ["lt", 350],
+        "ShipmentCount": ["lt", 20],
+        "CustomStdWidth": ["lt", 40],
+        "CustomStdHeight": ["lt", 40],
+        "CustomStdLength": ["lt", 40]
+		},
+		"agg_cols": [ "MonthNumber", "DestLocCode", "StandardWeightInKG"],
+		"feature_scaling": ["StandardWeightInKG", "CustomStdWidth", "CustomStdHeight", "CustomStdLength"]
+	},
+	"encoder_data": {
+		"label_enc_col": "DestLocCode",
+		"one_hot": ""
+	}
+}
